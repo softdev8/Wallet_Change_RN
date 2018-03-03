@@ -14,9 +14,6 @@ import { UserAction, RouteActions } from '../../actions/index';
 // Withdraw for Fiat
 class WithdrawFiatScreenContainer extends React.Component {
     static navigationOptions = {
-        // header: null,
-        // title: 'Deposit',
-        // headerTintColor:'#fff',
         headerStyle: { backgroundColor: mainBgColor },
         title: 'Withdraw',
     }
