@@ -56,10 +56,11 @@ class RegisterScreenContainer extends React.Component {
         console.log('SignToken =======', auth.signupConfirmToken);
         dispatch(AuthAction.confirmSignup(confirmcode));
     }
+
     render() {
         const { auth } = this.props;
         const { con_error, status } = auth;
-        console.log('auth token========', auth.signupConfirmToken)
+        
         return (<View style={[appStyles.container, { flex: 1, backgroundColor: '#7e57c2' }]}>
             <View style={{ flex: 1 }}></View>
             <View style={{ flex: 20 }}>
