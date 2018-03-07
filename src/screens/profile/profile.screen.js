@@ -346,11 +346,6 @@ const drawerButton = (navigation) => (
 )
 
 const styles = StyleSheet.create({
-    actionRow: {
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        marginBottom: 25,
-    },
     row: { 
         marginLeft: 12, 
         marginRight: 12 
