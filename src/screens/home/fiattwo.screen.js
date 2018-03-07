@@ -14,9 +14,6 @@ import { UserAction, RouteActions } from '../../actions/index';
 // Deposit Second Screen for Fiat
 class FiatTwoScreenContainer extends React.Component {
     static navigationOptions = {
-        // header: null,
-        // title: 'Deposit',
-        // headerTintColor:'#fff',
         headerStyle: { backgroundColor: mainBgColor },
         title: 'Deposit',
     }
