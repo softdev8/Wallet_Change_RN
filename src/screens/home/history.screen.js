@@ -209,22 +209,4 @@ const styles = StyleSheet.create({
         }
 });
 
-// const backButton = (navigation) => (
-//     <TouchableOpacity
-//         style={{padding: 5}}
-//         onPress={() => {
-//             console.log('Clicked Back Button');
-//             navigation.navigate('DrawerStack');
-//         }}>
-//         <Icon name={'md-arrow-back'} type='ionicon' size={30} color={mainTextColor} />
-//     </TouchableOpacity>
-// )
-
-// HistoryScreenContainer.navigationOptions = ({ navigation }) => ({
-//     title: 'Transaction History',
-//     headerTintColor: 'white',
-//     headerStyle: {backgroundColor: mainBgColor},
-//     headerLeft: backButton(navigation)
-// })
-
 export default connect((state) => ({ history: state.history }))(HistoryScreenContainer);
