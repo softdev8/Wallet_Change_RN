@@ -80,12 +80,4 @@ class FiatTwoScreenContainer extends React.Component {
     }
 }
 
-const styles = StyleSheet.create({
-    actionRow: {
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        marginBottom: 25,
-    }
-});
-
 export default connect((state) => ({ user: state.user }))(FiatTwoScreenContainer);
