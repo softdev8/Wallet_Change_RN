@@ -11,11 +11,6 @@ import { JsHelper } from '../../utils/index';
 import { AuthService } from '../../services/index';
 import { UserAction, RouteActions } from '../../actions/index';
 class HomeScreenContainer extends React.Component {
-    
-    // static navigationOptions = {
-    //     header: null
-    //     // headerStyle: { backgroundColor: mainBgColor },
-    // }
 
     constructor(props) {
         super(props);
