@@ -169,11 +169,6 @@ class WithdrawScreenContainer extends React.Component {
                             
                         </View>
                         <View style={{flexDirection: 'row', flex: 1, marginTop: 10}}>
-                            {/* <Button onPress={this.onSetNormal.bind(this)}
-                                buttonStyle={{width: 80}}
-                                disabledStyle={{ backgroundColor: secondaryBgColor }}
-                                title={'Normal'}
-                                backgroundColor={secondaryBgColor} /> */}
 
                             <View style={{marginLeft: 10}}>
                                 <RadioButton 
