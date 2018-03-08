@@ -59,25 +59,7 @@ class ProfileScreenContainer extends React.Component {
     componentDidMount() {
         this.queryUser();
     }
-    // componentDidUpdate(prevProps) {
-    //     if (this.props.user != prevProps.user){
-           
-    //         console.log('Profile Info', profile);
-    //         this.setState({
-    //             email: profile.email,
-    //             password: profile.password,
-    //             client_name: profile.client_name,
-    //             cuit: profile.CUIT,
-    //             national_id: ""+profile.national_id,
-    //             address: profile.residential_address,
-    //             cbu: profile.CBU,
-    //             bank_branch: profile.bank_branch,
-    //             verified: profile.verified
-
-    //         })
-    //     }
-    //     console.log(" Changed Client Name", this.state.verified);
-    // }
+    
     queryUser() {
         const { dispatch } = this.props;
         dispatch(UserAction.query());
