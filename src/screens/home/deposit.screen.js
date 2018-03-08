@@ -136,21 +136,4 @@ const styles = StyleSheet.create({
     }
 });
 
-// const backButton = (navigation) => (
-//     <TouchableOpacity
-//         style={{padding: 5}}
-//         onPress={() => {
-//             console.log('Clicked Back Button');
-//             navigation.navigate('DrawerStack');
-//         }}>
-//         <Icon name={'md-arrow-back'} type='ionicon' size={30} color={mainTextColor} />
-//     </TouchableOpacity>
-// )
-
-// DepositScreenContainer.navigationOptions = ({ navigation }) => ({
-//     title: 'Deposit',
-//     headerTintColor: 'white',
-//     headerStyle: {backgroundColor: mainBgColor},
-//     headerLeft: backButton(navigation)
-// })
 export default connect((state) => ({ user: state.user }))(DepositScreenContainer);
