@@ -77,12 +77,6 @@ class WithdrawFiatScreenContainer extends React.Component {
 
         var data = [{value: profile.bank_branch}];//Array();
         console.log('Profile Account: ', profile.bank_branch);
-        // for (var i =0; i < des_accounts.length; i++) {
-        //     let account_name = des_accounts[i].bank_branch
-        //     console.log('names', account_name)
-        //     data.push({value: account_name});
-        // }
-
         return (
             <ScrollView style={[{ flex: 1, backgroundColor: '#7e57c2' }]} refreshControl={
                 <RefreshControl progressBackgroundColor='#fff' colors={[mainBgColor]}
