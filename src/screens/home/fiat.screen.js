@@ -15,9 +15,6 @@ import { UserAction, RouteActions } from '../../actions/index';
 // Deposit Screen for Fiat
 class FiatScreenContainer extends React.Component {
     static navigationOptions = {
-        // header: null,
-        // title: 'Deposit',
-        // headerTintColor:'#fff',
         headerStyle: { backgroundColor: mainBgColor },
         title: 'Deposit',
     }
