@@ -10,7 +10,6 @@ import appStyles, { mainTextColor, secondaryBgColor, mainBgColor } from '../../s
 import { JsHelper } from '../../utils/index';
 import { UserAction, RouteActions } from '../../actions/index';
 
-
 // Deposit with Crypto
 class DepositScreenContainer extends React.Component {
     static navigationOptions = {
