@@ -83,7 +83,7 @@ class DepositScreenContainer extends React.Component {
             
                 <View style={{justifyContent: 'center', alignItems: 'center'}}>
                     <View style={[appStyles.container, { backgroundColor: '#000', justifyContent: 'center', marginTop: 40, width: Dimensions.get('window').width - 40, height: 200 }]} >
-                        <Text style={{textAlign: 'center', alignItems: 'center', fontSize: 30, color: mainTextColor}}>QR Code</Text>
+                        <Text style={{textAlign: 'center', alignItems: 'center', fontSize: 40, color: mainTextColor}}>QR Code</Text>
                     </View>
                     {/* <View style={{width: Dimensions.get('window').width - 40, marginTop: 20}}>
                         <Button onPress={this.onShareAddress.bind(this)}
@@ -100,19 +100,19 @@ class DepositScreenContainer extends React.Component {
                         <Text style={{ textAlign: 'center',marginTop: 20, height: 50, alignContent: 'center', width: Dimensions.get('window').width - 40, fontSize: 18, color: mainTextColor}}>{address}</Text>
                     }
 
-                    <View style={{width: Dimensions.get('window').width - 40, marginTop: 20}}>
+                    <View style={{width: Dimensions.get('window').width - 50, marginTop: 20}}>
                         <Button onPress={this.onCopyClip.bind(this)}
                             disabledStyle={{ backgroundColor: secondaryBgColor }}
                             title='COPY TO CLIPBOARD'
                             backgroundColor={secondaryBgColor} />
                     </View>
-                    <View style={{width: Dimensions.get('window').width - 40, marginTop: 20}}>
+                    <View style={{width: Dimensions.get('window').width - 50, marginTop: 20}}>
                         <Button onPress={this.onShareAddress.bind(this)}
                             disabledStyle={{ backgroundColor: secondaryBgColor }}
                             title='SHARE ADDRESS'
                             backgroundColor={secondaryBgColor} />
                     </View>
-                    <View style={{width: Dimensions.get('window').width - 40, marginTop: 20}}>
+                    <View style={{width: Dimensions.get('window').width - 50, marginTop: 20}}>
                         <Button onPress={this.onChangeAddress.bind(this)}
                             disabledStyle={{ backgroundColor: secondaryBgColor }}
                             title='CHANGE ADDRESS'
@@ -132,6 +132,11 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         marginBottom: 25,
+    },
+    btntype: {
+        backgroundColor: "#4dC63F",
+        width: 120,
+        height: 40
     }
 });
 
