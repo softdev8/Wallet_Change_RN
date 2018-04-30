@@ -19,3 +19,4 @@ export default (DrawNav = StackNavigator({
   withdraw_crypto: { screen: WithdrawCryptoScreen },
   withdraw_fiat: { screen: WithdrawFiatScreen },
 }));
+
