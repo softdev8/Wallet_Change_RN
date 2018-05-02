@@ -61,12 +61,10 @@ export function signup(cellphone, password) {
     };
 }
 
-
 export function confirmSignup(code) {
     return async (dispatch) => {
         try {
             dispatch({ type: Actions.reg_fetching, payload: { domain: 'auth' } });
-
 
             console.log('Token ======= ', AuthService.getToken(), code);
             const data = await ApiClient.post('users/register/confirmcode', { code: code }, AuthService.getToken());
