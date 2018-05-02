@@ -5,6 +5,7 @@ export const Actions = {
     ...CommonActions,
     query: 'trans.query'
 };
+
 export function query(type, dateFrom, dateTo) {
     return async (dispatch) => {
         try {
