@@ -17,7 +17,7 @@ export default {
     withdraw_fetching: "withdraw_fetching",
     withdraw_fetched: "withdraw_fetched",
     withdraw_error: "withdraw_error",
-    address_fetching: "address_fetching",   // generate address from endpoint
+    address_fetching: "address_fetching",
     address_fetched: "address_fetched",
     address_error: "address_error",
 
