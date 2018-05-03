@@ -8,5 +8,6 @@ export default {
     history:'route.history',
     deposit:'route.deposit',
     withdraw:'route.withdraw',
-    rollback:'route.rollback'
+    rollback:'route.rollback',
+    setting: 'route.setting'
 };
