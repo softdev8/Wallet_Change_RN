@@ -100,7 +100,7 @@ class LoginScreenContainer extends React.Component {
                         backgroundColor={secondaryBgColor} />
                 </View>
 
-                <View style={{marginTop: 20}}>
+                <View style={{marginTop: 35}}>
                     <Button onPress={this.onRegister.bind(this)}
                         disabledStyle={{ backgroundColor: secondaryBgColor }}
                         title='REGISTER'
