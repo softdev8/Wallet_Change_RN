@@ -11,7 +11,6 @@ const styles = StyleSheet.create({
     },
     titleIcon: { width: 65, height: 65 },
     iconButtonText:{}
-
 });
 
 export const LongLogo = (props) => (
