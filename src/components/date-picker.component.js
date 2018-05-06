@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {
     DatePickerAndroid, Keyboard
@@ -11,8 +10,6 @@ export default class DatePicker extends React.Component {
     constructor(props) {
         super(props);
         this.state = { pickedDate: null };
-    }
-    componentWillMount() {
     }
     reset() {
         this.setState({ pickedDate: null });
