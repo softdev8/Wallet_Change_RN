@@ -89,6 +89,18 @@ export default function handleDataStatusAction(action, state, domain) {
             if (action.payload.domain === domain)
                 nextState = { ...state, status: 'address_error', address_error: action.payload.error };            
             break;
+        case Actions.address_sending:
+            if (action.payload.domain === domain)
+                nextState = { ...state, status: 'address_sending', address_senderror: null };
+            break;
+        case Actions.address_sended:
+            if (action.payload.domain === domain)
+                nextState = { ...state, status: 'address_sended', address_senderror: null };
+            break;
+        case Actions.address_senderror:
+            if (action.payload.domain === domain)
+                nextState = { ...state, status: 'address_senderror', address_senderror: action.payload.error };            
+            break;
         default:
             nextState = state;
             break;
