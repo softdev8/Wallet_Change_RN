@@ -8,7 +8,8 @@ const AppReducer = combineReducers({
   route,
   auth,
   user,
-  history
+  history,
+  profile
 });
 
 export default AppReducer;
