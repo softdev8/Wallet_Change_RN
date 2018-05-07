@@ -16,6 +16,8 @@ function auth(state = {
                 nextState = { ...state, user: action.payload };
             }
             break;
+        case Actions.signin:
+            break;
         default:
             nextState = handleDataStatusAction(action, state, 'auth');
             break;
