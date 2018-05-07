@@ -10,6 +10,8 @@ function auth(state = {
                 nextState = { ...state, records: action.payload };
             }
             break;
+        case Actions.payhistory:
+            break;
         default:
             nextState = handleDataStatusAction(action, state, 'history');
             break;
