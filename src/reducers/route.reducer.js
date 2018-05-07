@@ -85,7 +85,6 @@ function route(state = initialNavState, action) {
             break;
 
     }
-
     return nextState || state;
 }
 
