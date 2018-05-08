@@ -31,9 +31,6 @@ class FiatTwoScreenContainer extends React.Component {
         dispatch(UserAction.query());
     }
 
-    onSubmit() {
-    }
-
     render() {
         const { profile } = this.props.user;
 
