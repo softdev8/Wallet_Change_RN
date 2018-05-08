@@ -56,9 +56,6 @@ class WithdrawFiatScreenContainer extends React.Component {
     }
 
     onSelectedItem(item) {
-        // const { des_accounts } = this.props.user;
-        
-        // console.log("Selected Item", this.state.account_id);
     }
 
     render() {
