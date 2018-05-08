@@ -55,9 +55,6 @@ class WithdrawFiatScreenContainer extends React.Component {
         dispatch(UserAction.withdraw_confirm(this.state.sms_code));
     }
 
-    onSelectedItem(item) {
-    }
-
     render() {
         // const { des_accounts } = this.props.user;
         const { profile } = this.props.user;
