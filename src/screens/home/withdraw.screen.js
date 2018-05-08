@@ -81,10 +81,6 @@ class WithdrawScreenContainer extends React.Component {
         }
         
     }
-
-    onSetSlow(){
-        this.setState({rate_fee_value: 50000})
-    }
     
     onSetNormal(){
         this.setState({rate_fee_value: 50000})
@@ -154,11 +150,6 @@ class WithdrawScreenContainer extends React.Component {
                     <View style={[ styles.row,
                         { marginTop: 20, marginLeft: 40 }]}>
                         <View style={{flexDirection: 'row', flex: 1 }}>
-                            {/* <Button onPress={this.onSetSlow.bind(this)}
-                                buttonStyle={{width: 80}}
-                                disabledStyle={{ backgroundColor: secondaryBgColor }}
-                                title={'Slow'}
-                                backgroundColor={secondaryBgColor} /> */}
                             <View style={{marginLeft: 10}}>
                                 <RadioButton 
                                 currentValue={this.state.rate_fee} value={0} 
