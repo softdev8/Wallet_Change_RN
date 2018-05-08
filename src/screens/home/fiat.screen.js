@@ -49,15 +49,6 @@ class FiatScreenContainer extends React.Component {
         dispatch({ type: RouteActions.history });
     }
 
-    onCopyClip() {
-    }
-
-    onShareAddress() {
-    }
-
-    onChangeAddress() {
-    }
-
     goToFiatTwo() {
         this.props.navigation.navigate("deposit_fiattwo");
     }
