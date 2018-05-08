@@ -73,7 +73,6 @@ class HistoryScreenContainer extends React.Component {
         else if (type == 'to') {
             this.queryTransactions(queryType, dateRangeType);
         }
-
     }
     sortHistoryData(data) {
         let sortedData = data.sort((a, b) => a - b);
