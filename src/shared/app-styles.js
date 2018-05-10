@@ -10,10 +10,10 @@ export default StyleSheet.create({
     },
     container:
         {
-            paddingLeft: 12.5,
-            paddingRight: 12.5,
-            paddingTop: 12.5,
-            paddingBottom: 12.5,
+            paddingLeft: 13,
+            paddingRight: 13,
+            paddingTop: 13,
+            paddingBottom: 13,
         },
     mainTextColor: { color: mainTextColor },
     mainButtonColor: { color: secondaryBgColor },
