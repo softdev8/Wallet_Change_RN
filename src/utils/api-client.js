@@ -59,8 +59,7 @@ export async function patch(endpoint, payload, authorizeToken) {
         let headers = initRequestHeader();
         if (authorizeToken)
             headers['Authorization'] = 'JWT ' + authorizeToken;
-
-        console.log(AppEnv.api_url + '/' + endpoint + 'body:' + JSON.stringify(payload));
+        
         let resp = await fetch(AppEnv.api_url + '/' + endpoint, {
             method: 'PATCH',
             headers: headers,
