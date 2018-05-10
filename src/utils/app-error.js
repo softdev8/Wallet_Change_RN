@@ -9,4 +9,7 @@ export default class {
     get text() {
         return this._error;
     }
+    get json() {
+        return this._json;
+    }
 }
