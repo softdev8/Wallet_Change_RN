@@ -34,7 +34,6 @@ export async function post(endpoint, payload, authorizeToken) {
         if (authorizeToken)
             headers['Authorization'] = 'JWT ' + authorizeToken;
 
-        console.log(AppEnv.api_url + '/' + endpoint + 'body:' + JSON.stringify(payload));
         let resp = await fetch(AppEnv.api_url + '/' + endpoint, {
             method: 'POST',
             headers,
