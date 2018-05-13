@@ -71,9 +71,9 @@ class SideBar extends React.Component {
         this.setState({isModalVisible: !this.state.isModalVisible})
     }
 
-    addAcount() {
+//     addAcount() {
 
-    }
+//     }
 
     cancelAccount() {
         this.setState({isModalVisible: !this.state.isModalVisible})
