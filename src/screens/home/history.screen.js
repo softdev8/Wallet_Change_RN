@@ -13,7 +13,6 @@ import appStyles, { mainBgColor, secondaryBgColor, mainTextColor } from '../../s
 import { HistoryAction } from '../../actions/index';
 class HistoryScreenContainer extends React.Component {
     static navigationOptions = {
-        // header: null
         headerStyle: { backgroundColor: mainBgColor },
         title: 'Transaction History'
     }
