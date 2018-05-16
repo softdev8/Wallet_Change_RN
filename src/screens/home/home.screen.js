@@ -15,8 +15,6 @@ class HomeScreenContainer extends React.Component {
     constructor(props) {
         super(props);
         this.state = { showBalance: false };
-
-        this._showSideBar = this._showSideBar.bind(this);
     }
     componentDidMount() {
         this.queryUser();
@@ -28,9 +26,7 @@ class HomeScreenContainer extends React.Component {
     showHideBalance() {
         this.setState({ showBalance: !this.state.showBalance });
     }
-    _showSideBar() {
-        alert('Clicked Menu Icon')
-    }
+    
     goToWithdraw() {
         const { fiat_status, crypto_status, sel_account } = this.props.user;
         if (fiat_status === true) {
@@ -143,6 +139,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         marginBottom: 25,
-    }
+    },
+    
 });
 export default connect((state) => ({ user: state.user }))(HomeScreenContainer);
