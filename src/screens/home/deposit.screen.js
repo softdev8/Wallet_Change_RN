@@ -13,9 +13,6 @@ import { UserAction, RouteActions } from '../../actions/index';
 // Deposit with Crypto
 class DepositScreenContainer extends React.Component {
     static navigationOptions = {
-        // header: null,
-        // title: 'Deposit',
-        // headerTintColor:'#fff',
         headerStyle: { backgroundColor: mainBgColor },
         title: 'Deposit',
     }
