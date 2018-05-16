@@ -77,4 +77,11 @@ class FiatTwoScreenContainer extends React.Component {
     }
 }
 
+const Style = StyleSheet.creat{
+    container: {
+        flexDirection: 'row',
+        backgroundColor: '#F5FEF9'
+    }
+}
+
 export default connect((state) => ({ user: state.user }))(FiatTwoScreenContainer);
