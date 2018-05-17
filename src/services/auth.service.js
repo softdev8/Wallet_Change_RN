@@ -1,4 +1,5 @@
 let authObj = null;
+
 export function authenticate(authData) {
     authObj = authData;
 }
