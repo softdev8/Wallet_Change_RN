@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  View
-} from 'react-native';
+import { View } from 'react-native';
 import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'remote-redux-devtools';
 import { Provider } from 'react-redux';
