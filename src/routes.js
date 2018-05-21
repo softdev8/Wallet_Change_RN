@@ -97,8 +97,6 @@ AppNavigator.router.getStateForAction = (action, state) => {
 };
 
 const AppNavigatorWithState = ({ dispatch, route }) => {
-
   return <AppNavigator navigation={addNavigationHelpers({ dispatch, state: route })} />;
-
 };
 export default connect(state => ({ route: state.route }))(AppNavigatorWithState);
