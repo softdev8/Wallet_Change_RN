@@ -1,5 +1,6 @@
 import { Dimensions } from 'react-native';
 import DeviceInfo from 'react-native-device-info';
+
 const screenDimensions = Dimensions.get('window');
 
  const AppConstants = {
@@ -9,4 +10,5 @@ const screenDimensions = Dimensions.get('window');
     BundleId: DeviceInfo.getBundleId(),
     DeviceId:DeviceInfo.getUniqueID(),
 };
+
 export default AppConstants;
