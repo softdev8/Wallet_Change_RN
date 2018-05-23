@@ -31,6 +31,7 @@ export async function post(endpoint, payload, authorizeToken) {
     try {
 
         let headers = initRequestHeader();
+        console.log('Access Token', authorizeToken);
         if (authorizeToken)
             headers['Authorization'] = 'JWT ' + authorizeToken;
 
