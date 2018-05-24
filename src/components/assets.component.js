@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
         flex: 1, height: null, width: null
     },
     titleIcon: { width: 65, height: 65 },
-    iconButtonText:{}
+    iconButtonText:{ fontSize: 18, color: '#fff'}
 });
 
 export const LongLogo = (props) => (
@@ -18,7 +18,6 @@ export const LongLogo = (props) => (
     <Image source={require('../assets/images/Panacea_opt.png')}
         style={[styles.image, props.style]} />
 );
-
 
 export const TransactionHistoryIconButton = (props) => (
 
