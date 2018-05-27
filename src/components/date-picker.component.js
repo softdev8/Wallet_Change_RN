@@ -41,6 +41,7 @@ export default class DatePicker extends React.Component {
     render() {
         const { width, color, placeholder, fontSize, disabled } = this.props;
         const { pickedDate } = this.state;
+        console.log('reder module');
         let strDate = null;
         if (pickedDate) {
             strDate = ('' + pickedDate.year).substr(2) + '/' +
