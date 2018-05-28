@@ -8,6 +8,7 @@ export default class SwitchButton extends React.Component {
         super(props);
     }
     onClick() {
+        console.log('switched button');
         const { onSwitch, value } = this.props;
         onSwitch && onSwitch(value);
     }
