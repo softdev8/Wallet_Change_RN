@@ -53,7 +53,6 @@ class RegisterScreenContainer extends React.Component {
             }).start();
             return;
         }
-        console.log('SignToken =======', auth.signupConfirmToken);
         dispatch(AuthAction.confirmSignup(confirmcode));
     }
 
