@@ -9,7 +9,6 @@ import FiatScreen from './fiat.screen';
 import FiatTwoScreen from './fiattwo.screen';
 import WithdrawFiatScreen from './withdraw.fiat.screen';
 
-
 export default (DrawNav = StackNavigator({
   home: { screen: HomeScreen },
   history: { screen: HistoryScreen },
@@ -19,4 +18,3 @@ export default (DrawNav = StackNavigator({
   withdraw_crypto: { screen: WithdrawCryptoScreen },
   withdraw_fiat: { screen: WithdrawFiatScreen },
 }));
-
