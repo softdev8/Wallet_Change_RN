@@ -247,11 +247,6 @@ class SideBar extends React.Component {
 
                     <View style={{  marginTop: 5, marginBottom: 5, height: 20 }}/>
 
-                    {/* <Text
-                        onPress={this.logout}
-                        style={styles.uglyDrawerItem}>
-                        Log Out
-                    </Text> */}
                 </ScrollView>
                 <View style={{ position: "absolute" }}>
                     <Modal isVisible={this.state.isModalVisible}>
