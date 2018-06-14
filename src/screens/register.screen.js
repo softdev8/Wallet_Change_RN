@@ -6,6 +6,7 @@ import { Assets } from '../components';
 import appStyles, { mainTextColor, secondaryBgColor, mainBgColor } from '../shared/app-styles';
 
 import { AuthAction } from '../actions'
+
 class RegisterScreenContainer extends React.Component {
     static navigationOptions = {
         headerStyle: { backgroundColor: mainBgColor },
