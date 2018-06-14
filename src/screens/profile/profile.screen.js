@@ -304,7 +304,6 @@ class ProfileScreenContainer extends React.Component {
                     </Modal>
                 </View>
             </ ScrollView >
-            
         );
     }
 }
