@@ -354,4 +354,5 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     }, 
 });
+
 export default connect((state) => ({ user: state.user }))(ProfileScreenContainer);
