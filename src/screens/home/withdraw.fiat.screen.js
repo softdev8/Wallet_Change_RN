@@ -146,4 +146,5 @@ const styles = StyleSheet.create({
     }
 });
 
+
 export default connect((state) => ({ user: state.user }))(WithdrawFiatScreenContainer);
