@@ -28,6 +28,7 @@ class LoginScreenContainer extends React.Component {
         };
     }
     onLogin() {
+        console.log('Login');
         const { cellphone, password } = this.state;
         const { dispatch } = this.props;
         if (!cellphone || !password) {
