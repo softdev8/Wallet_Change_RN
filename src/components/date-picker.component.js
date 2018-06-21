@@ -6,7 +6,9 @@ import { FormInput } from 'react-native-elements';
 import { mainBgColor } from '../shared/app-styles';
 import { JsHelper } from '../utils/index';
 
+// customize DatePicker
 export default class DatePicker extends React.Component {
+    
     constructor(props) {
         super(props);
         this.state = { pickedDate: null };
