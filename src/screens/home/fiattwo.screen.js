@@ -23,10 +23,13 @@ class FiatTwoScreenContainer extends React.Component {
             amount: ''
         };
     }
+
     componentDidMount() {
         this.queryUser();
     }
+
     queryUser() {
+        console.log("query User");
         const { dispatch } = this.props;
         dispatch(UserAction.query());
     }
