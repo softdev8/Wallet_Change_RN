@@ -20,6 +20,7 @@ class HomeScreenContainer extends React.Component {
         this.queryUser();
     }
     queryUser() {
+        console.log("query User");
         const { dispatch } = this.props;
         dispatch(UserAction.query());
     }
@@ -142,4 +143,5 @@ const styles = StyleSheet.create({
     },
     
 });
+
 export default connect((state) => ({ user: state.user }))(HomeScreenContainer);
