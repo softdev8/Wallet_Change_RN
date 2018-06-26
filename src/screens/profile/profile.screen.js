@@ -77,12 +77,11 @@ class ProfileScreenContainer extends React.Component {
             console.log('Changed Email');
             this.setState({ bChangedEmail: true });
         }
-        // if (!email || !password) {
-        //     return;
-        // }
+
         dispatch(UserAction.update(this.state.email, this.state.password, this.state.client_name, this.state.cuit, this.state.national_id, this.state.address, this.state.cbu, this.state.bank_branch));
     }
     onGetVerified() {
+        
     }
 
     onVerifyEmail() {
