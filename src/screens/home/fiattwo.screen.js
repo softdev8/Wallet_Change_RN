@@ -11,7 +11,6 @@ import appStyles, { mainTextColor, secondaryBgColor, mainBgColor } from '../../s
 import { JsHelper } from '../../utils/index';
 import { UserAction, RouteActions } from '../../actions/index';
 
-// Deposit Second Screen for Fiat
 class FiatTwoScreenContainer extends React.Component {
     static navigationOptions = {
         headerStyle: { backgroundColor: mainBgColor },
