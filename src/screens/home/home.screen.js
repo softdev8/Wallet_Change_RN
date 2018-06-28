@@ -10,6 +10,7 @@ import appStyles, { mainTextColor, secondaryBgColor, mainBgColor } from '../../s
 import { JsHelper } from '../../utils/index';
 import { AuthService } from '../../services/index';
 import { UserAction, RouteActions } from '../../actions/index';
+
 class HomeScreenContainer extends React.Component {
 
     constructor(props) {
@@ -73,6 +74,7 @@ class HomeScreenContainer extends React.Component {
             balance = sel_account.balance;
         }
         balance = showBalance ? JsHelper.rightPad('' + balance, ' ', 7) : JsHelper.leftPad('*', '*', 7);
+        
         return (
             <ScrollView style={[{ flex: 1, backgroundColor: '#7e57c2' }]} refreshControl={
                 <RefreshControl progressBackgroundColor='#fff' colors={[mainBgColor]}
@@ -141,7 +143,11 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         marginBottom: 25,
     },
-    
+    containView: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        marginBottom: 25,
+    },
 });
 
 export default connect((state) => ({ user: state.user }))(HomeScreenContainer);
