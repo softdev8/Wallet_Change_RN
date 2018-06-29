@@ -125,6 +125,11 @@ const styles = StyleSheet.create({
         backgroundColor: "#4dC63F",
         width: 120,
         height: 40
+    },
+    labeltype: {
+        backgroundColor: "#4dC63F",
+        width: 40,
+        height: 40
     }
 });
 
