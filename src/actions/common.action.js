@@ -20,5 +20,7 @@ export default {
     address_fetching: "address_fetching",
     address_fetched: "address_fetched",
     address_error: "address_error",
-
+    send_fetching: "send_fetching",
+    send_fetched: "send_fetched",
+    send_error: "send_error",
 };
