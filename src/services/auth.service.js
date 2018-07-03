@@ -4,7 +4,7 @@ export function authenticate(authData) {
     authObj = authData;
 }
 export function isAuthenticated() {
-    return authObj && authObj.expired_at && +authObj.expired_at > Date.now()
+    return authObj && authObj.expired_at && + authObj.expired_at > Date.now()
 }
 export function getAuthData() {
     return { ...authObj };
