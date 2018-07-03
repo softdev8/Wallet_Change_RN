@@ -97,3 +97,10 @@ function initPatchRequestHeader() {
     };
     return headers;
 }
+function initHTMLHeader() {
+    let headers = {
+        'Accept': 'application/json',
+        'Content-Type': 'application/html'
+    };
+    return headers;
+}
