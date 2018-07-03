@@ -5,7 +5,7 @@ const screenDimensions = Dimensions.get('window');
 
  const AppConstants = {
     ScreenDimensions: screenDimensions,
-    HeaderTitleWidth: screenDimensions.width - 130,
+    HeaderTitleWidth: screenDimensions.width - 120,
     IsSmallDevice: screenDimensions.height <= 568,
     BundleId: DeviceInfo.getBundleId(),
     DeviceId:DeviceInfo.getUniqueID(),
