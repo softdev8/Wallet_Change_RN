@@ -194,17 +194,17 @@ const styles = StyleSheet.create({
         marginTop: 10,
     },
     listItem:
-        {
+    {
             flexDirection: 'row',
             height: 70,
             alignItems: 'center'
-        },
+    },
     listItemIcon:
-        {
+    {
             marginRight: 5,
             marginBottom: 5,
             marginTop: 5
-        }
+    }
 });
 
 export default connect((state) => ({ history: state.history }))(HistoryScreenContainer);
