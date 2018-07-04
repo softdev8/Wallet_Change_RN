@@ -131,7 +131,8 @@ const drawerButton = (navigation) => (
       onPress={() => {
         navigation.navigate('DrawerToggle')
       }}>
-      <Image source={require('../../assets/images/menu.png')}
+      <Image 
+        source={require('../../assets/images/menu.png')}
         style={{width: 24, height: 24}}
       />
     </TouchableOpacity>
