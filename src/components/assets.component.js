@@ -90,3 +90,13 @@ export const QiwiIconButton = (props) => (
         </View>
     </TouchableOpacity>
 );
+
+export const ExitIconButton = (props) => (
+    <TouchableOpacity onPress={props.onPress && props.onPress()}>
+        <View style={[{ flexDirection: 'column', alignItems: 'center', opacity: 0.5 }]}>
+            <Image source={require('../assets/images/exit.png')}
+                style={[styles.titleIcon, props.style]} />
+            <Text style={[appStyles.mainTextColor,styles.iconButtonText]}>Exit</Text>
+        </View>
+    </TouchableOpacity>
+);
