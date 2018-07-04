@@ -190,9 +190,9 @@ const styles = StyleSheet.create({
 
     },
     sectionHeader:
-        {
-            marginTop: 10,
-        },
+    {
+        marginTop: 10,
+    },
     listItem:
         {
             flexDirection: 'row',
