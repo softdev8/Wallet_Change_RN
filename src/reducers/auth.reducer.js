@@ -12,7 +12,11 @@ function auth(state = {
             break;
         case Actions.confirmSignup:
             if (action.payload) {
-
+                nextState = { ...state, user: action.payload };
+            }
+            break;
+        case Actions.fbsignup:
+            if (action.payload) {
                 nextState = { ...state, user: action.payload };
             }
             break;
