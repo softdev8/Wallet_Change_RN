@@ -27,7 +27,7 @@ class App extends React.Component {
         </View>
       </Provider>
     );
-
   }
 }
+
 export default App;
