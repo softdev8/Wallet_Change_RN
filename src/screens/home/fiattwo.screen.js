@@ -42,10 +42,6 @@ class FiatTwoScreenContainer extends React.Component {
 
         return (
             <ScrollView style={[{ flex: 1, backgroundColor: '#7e57c2' }]} refreshControl={
-//                 <RefreshControl progressBackgroundColor='#fff' colors={[mainBgColor]}
-//                     refreshing={false}
-//                     onRefresh={this.queryUser.bind(this)}
-//                 />}>
                             <RefreshControl progressBackgroundColor='#fff' colors={[mainBgColor]}
                     refreshing={false}
                     onRefresh={this.queryUser.bind(this)}
