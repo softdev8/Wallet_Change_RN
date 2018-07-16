@@ -12,7 +12,6 @@ import { JsHelper } from '../../utils/index';
 import { UserAction, RouteActions } from '../../actions/index';
 
 
-// Deposit Screen for Fiat
 class FiatScreenContainer extends React.Component {
     static navigationOptions = {
         headerStyle: { backgroundColor: mainBgColor },
@@ -28,6 +27,7 @@ class FiatScreenContainer extends React.Component {
         this._showSideBar = this._showSideBar.bind(this);
     }
     componentDidMount() {
+        //Query User Info
         this.queryUser();
     }
     queryUser() {
