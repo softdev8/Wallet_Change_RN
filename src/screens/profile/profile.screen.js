@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {
     View, ScrollView, StyleSheet, Animated, Easing,
-    TouchableOpacity, RefreshControl, Image
+    TouchableOpacity, RefreshControl, Image, View
 } from 'react-native';
 import { FormInput, Divider, Header, Icon, Text, Button, FormValidationMessage } from 'react-native-elements';
 import appStyles, { mainTextColor, secondaryBgColor, mainBgColor } from '../../shared/app-styles';
