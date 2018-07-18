@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {
     View, ScrollView, StyleSheet, Button,
-    TouchableOpacity, RefreshControl, Image
+    TouchableOpacity, RefreshControl, Image, View
 } from 'react-native';
 import { Divider, Header, Icon, Text } from 'react-native-elements';
 import { Assets } from '../../components';
@@ -11,6 +11,7 @@ import { JsHelper } from '../../utils/index';
 import { AuthService } from '../../services/index';
 import { UserAction, RouteActions } from '../../actions/index';
 
+// load first screen
 class HomeScreenContainer extends React.Component {
 
     constructor(props) {
