@@ -26,6 +26,25 @@ export function login(cellphone, password) {
     };
 
 }
+export function fblogin(cellphone, password) {
+    return async (dispatch) => {
+        try {
+            dispatch({ type: Actions.fetching, payload: { domain: 'auth' } });
+
+            const data = await ApiClient.post('users/auth', { cellphone: cellphone, password: password });
+
+            const { token, expired_at } = data;
+            AuthService.authenticate({ cellphone, token, expired_at });
+            dispatch({ type: RouteActions.homeStack });
+            dispatch({ type: Actions.fetched, payload: { domain: 'auth' } });
+        }
+        catch (err) {
+            console.log(err);
+            dispatch({ type: Actions.error, payload: { domain: 'auth', error: err } });
+        }
+    };
+
+}
 export function logout() {
     return (dispatch) => {
         AuthService.authenticate(null);
