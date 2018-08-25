@@ -91,6 +91,16 @@ export const QiwiIconButton = (props) => (
     </TouchableOpacity>
 );
 
+export const QuiteIconButton = (props) => (
+    <TouchableOpacity onPress={props.onPress && props.onPress()}>
+        <View style={[{ flexDirection: 'column', alignItems: 'center', opacity: 0.5 }]}>
+            <Image source={require('../assets/images/quite.png')}
+                style={[styles.titleIcon, props.style]} />
+            <Text style={[appStyles.mainTextColor,styles.iconButtonText]}>Quite Button</Text>
+        </View>
+    </TouchableOpacity>
+);
+
 export const ExitIconButton = (props) => (
     <TouchableOpacity onPress={props.onPress && props.onPress()}>
         <View style={[{ flexDirection: 'column', alignItems: 'center', opacity: 0.5 }]}>
