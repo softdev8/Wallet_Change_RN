@@ -83,7 +83,16 @@ class ProfileScreenContainer extends React.Component {
     onGetVerified() {
         
     }
-
+    onChangePassword() {
+        const { password } = this.state;
+        const { dispatch } = this.props;
+        if ( !sms_code ){
+            alert('Please input SMS CODE')
+            return
+        }
+        this.setState({ bChangePassword: false });
+        dispatch(UserAction.password_confirm(password, sms_code));
+    }
     onVerifyEmail() {
         const { sms_code, email } = this.state;
         const { dispatch } = this.props;
