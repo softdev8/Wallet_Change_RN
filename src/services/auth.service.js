@@ -9,6 +9,10 @@ export function isAuthenticated() {
 export function getAuthData() {
     return { ...authObj };
 }
+export function getEmail() {
+    const { email } = authObj || {};
+    return email;
+}
 export function getCellphone() {
     const { cellphone } = authObj || {};
     return cellphone;
